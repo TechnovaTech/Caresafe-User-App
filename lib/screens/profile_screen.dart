@@ -34,9 +34,11 @@ class ProfileScreen extends StatelessWidget {
             child: ListView(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               children: [
-                const _ProfileItem(icon: Icons.settings_outlined, title: 'Profile Settings'),
-                const SizedBox(height: 12),
-                const _ProfileItem(icon: Icons.badge_outlined, title: 'Personal Info'),
+                _ProfileItem(
+                  icon: Icons.settings_outlined,
+                  title: 'Profile Settings',
+                  onTap: () => Navigator.pushNamed(context, '/profile-settings'),
+                ),
                 const SizedBox(height: 12),
                 _ProfileItem(
                   icon: Icons.groups_outlined,

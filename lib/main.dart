@@ -10,6 +10,7 @@ import 'screens/records_screen.dart';
 import 'screens/sos_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/notifications_screen.dart';
+import 'screens/profile_settings_screen.dart';
 
 import 'package:flutter_web_plugins/url_strategy.dart';
 
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         '/records': (context) => const RecordsScreen(),
         '/sos': (context) => const SosScreen(),
         '/profile': (context) => const ProfileScreen(),
+        '/profile-settings': (context) => const ProfileSettingsScreen(),
         '/notifications': (context) => const NotificationsScreen(),
       },
     );
